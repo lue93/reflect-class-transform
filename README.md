@@ -11,7 +11,7 @@ Adicione a dependência ao seu arquivo `pom.xml`:
 ```xml
 <dependency>
     <groupId>br.com.ungaratto93.lib</groupId>
-    <artifactId>reflection-mapper</artifactId>
+    <artifactId>refl</artifactId>
     <version>1.0</version>
 </dependency>
 ```
