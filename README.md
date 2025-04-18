@@ -1,6 +1,6 @@
-# ReflectionClassMapper Library
+# reflect-class-transform Library
 
-**ReflectionClassMapper** é uma biblioteca Java que facilita a conversão de objetos entre entidades e DTOs utilizando a API de reflexão do Java. Essa abordagem oferece flexibilidade e automação ao lidar com diferentes classes.
+**reflect-class-transform** é uma biblioteca Java que facilita a conversão de objetos entre entidades e DTOs utilizando a API de reflexão do Java. Essa abordagem oferece flexibilidade e automação ao lidar com diferentes classes.
 
 ---
 
@@ -11,7 +11,7 @@ Adicione a dependência ao seu arquivo `pom.xml`:
 ```xml
 <dependency>
     <groupId>br.com.ungaratto93.lib</groupId>
-    <artifactId>refl</artifactId>
+    <artifactId>reflect-class-transform</artifactId>
     <version>1.0</version>
 </dependency>
 ```
@@ -26,9 +26,10 @@ public class Main {
         Contact contact = new Contact();
         contact.setName("John Doe");
         contact.setEmail("john.doe@example.com");
+        Transformer transformer = new Transformer();
 
         // Converter de entidade para DTO
-        ContactDTO contactDTO = ReflectionMapper.map(contact, ContactDTO.class);
+        ContactDTO contactDTO = transformer.transform(contact, ContactDTO.class);
 
         System.out.println(contactDTO.getName());
         System.out.println(contactDTO.getEmail());
@@ -36,7 +37,7 @@ public class Main {
 }
 ```
 Detalhes:
-- O método ReflectionMapper.map(Object source, Class<T> targetClass) usa reflexão para copiar os valores dos campos da classe origem para a classe destino.
+- O método transform(Objrect source, Class<T> targetClass) usa reflexão para copiar os valores dos campos da classe origem para a classe destino.
 - Certifique-se de que as classes possuem nomes de campo correspondentes e construtores acessíveis.
 
 
