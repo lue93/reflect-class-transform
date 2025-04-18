@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.ungaratto93.lib</groupId>
-    <artifactId>refl</artifactId>
+    <artifactId>reflect-class-transform</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -32,7 +32,7 @@
          <repository>
           <id>github</id>
           <name>GitHub ungaratto93 Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/ungaratto93/ReflectClassMapper</url>
+          <url>https://maven.pkg.github.com/ungaratto93/reflect-class-transform</url>
          </repository>
     </distributionManagement>
 </project>
